@@ -1,0 +1,128 @@
+    
+    html{
+        height: 100%;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1900px;
+    }
+    header{
+        background-color: #291010;
+        width:100%;
+        height: 80px;
+        /* position: fixed;     */
+        top:0px;
+        left: 0px;
+        padding:20px 0;
+        z-index: 2; 
+    }
+    nav{ 
+        background-color:inherit;
+        color: white;
+        height: 30px; 
+        display: block;
+        float:right;     
+      
+     }
+    img{
+        width: 500px;
+        padding-left: 10px;
+    }
+    main{
+        height:800px;
+        background-color:inherit;
+    }
+    body{
+    background-image:url("Images/lenthil-soup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .8;
+     }
+     nav a{
+         text-decoration: none;
+         color: rgb(235, 231, 22);
+         font-size: 10pt;
+         font-weight: bolder;
+         padding-left: 10px;
+         padding-right: 10px;  
+     }
+    h2{
+        color:rgb(39, 10, 10);
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-bottom: 0pt;
+        padding-bottom: 0mm;
+    }
+    p{
+        color:rgb(39, 10, 10);
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 12pt;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal;
+        font-weight: bold;
+        }
+    .visit{
+        background-color: rgb(226, 148, 135);
+        margin-top: 90px;
+        padding-top: 0px;
+        margin-left: 80px;
+        margin-right: auto;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-content: center; */ 
+        border-radius: 15px 20px 30px;   
+    }
+    .eatwithus{
+        background-color: rgb(226, 148, 135);
+        margin-left: 80px;
+        margin-top: 10px;
+        margin-right: auto;
+        padding-top: 5px;
+        width: 300px;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-content: center; */ 
+        border-radius: 15px 20px 30px;   
+    } 
+ 
+    main{    
+        height: 600px;     
+        width: auto;     
+    }
+    h1{
+        color: white;
+        font-size:30px;
+        text-align: right;
+        padding-right: 30px;
+    }
+    h4{
+        color: white;
+        font-size: 12pt;
+    }
+    footer p{
+        color: white;
+        font-size: 12pt;
+    }
+
+    footer{
+        background-color: #291010;
+        height: 30px;
+        width: 100%; 
+        display: block;
+        bottom:0px;
+        left: 0px;
+        clear: both;
+        position: fixed;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+        
+
+    
