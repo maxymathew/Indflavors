@@ -138,7 +138,7 @@
         text-decoration: tomato;
         width: 700px;
         margin-top:0cm;
-        margin-left: 420px;
+        margin-left: 300px;
         padding-right: 2CM;
         padding-top: 2CM;
         border-radius: 15px 20px 30px;
@@ -150,14 +150,10 @@
         height: 150px;
         margin-right: auto;
         padding-top: 1CM;
-        margin-left: 1520px;
+        margin-left: 1400px;
         border-radius: 30%;
     }
-    /* .column1{
-        background-color: teal;
-        width: 400px;
-        margin-left: 200PX;
-    } */
+
 
     footer{
         background-color: #291010;
