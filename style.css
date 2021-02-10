@@ -139,6 +139,7 @@
         width: 700px;
         margin-top:0cm;
         margin-left: 300px;
+        margin-bottom: 10px;
         padding-right: 2CM;
         padding-top: 2CM;
         border-radius: 15px 20px 30px;
@@ -150,8 +151,9 @@
         height: 150px;
         margin-right: auto;
         padding-top: 1CM;
-        margin-left: 1400px;
+        margin-left: 1500px;
         border-radius: 30%;
+        margin-bottom: 10px;
     }
 
 
