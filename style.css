@@ -1,164 +1,221 @@
-    
-    html{
+html{
+    height: 100%;
+    background-image:url("./images/spice-pasta.jpg");
+    /* background-image:url("./images/lenthil-soup.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    }
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+        font-family:sans-serif;
+    }
+    .navbar{
+        background:#131313;
+        height: 80px;
+        display: flex;  
+        align-items: right;
+        font-size: .8rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    .navbar__contaniner{
+        display:flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+   
+    .navbar__logo img{
+        justify-content: left;
+        display: flex;
+        float: left;
+        cursor: pointer;
+        width: 12cm;
+        margin-left: 0.5cm;
+    }
+    .fa-gem{
+        margin-right: 0.5rem;
+    }
+    .navbar__menu{
+        /* justify-content: right; */
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 1300px;
+    }
+    .navbar__item{
+        height: 80px;
+    }
+    .navbar__links{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
         height: 100%;
     }
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-        width: 1900px;
-    }
-    header{
-        background-color: #291010;
-        width:100%;
-        height: 80px;
-        /* position: fixed;     */
-        top:0px;
-        left: 0px;
-        padding:20px 0;
-        z-index: 2; 
-    }
-    nav{ 
-        background-color:inherit;
-        color: white;
-        height: 30px; 
-        display: block;
-        float:right;     
-      
-     }
-    img{
-        width: 500px;
-        padding-left: 10px;
-    }
-    main{
-        height:800px;
-        background-color:inherit;
-    }
-    body{
-    background-image:url("./images/lenthil-soup.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: .8;
-     }
-     nav a{
-         text-decoration: none;
-         color: rgb(235, 231, 22);
-         font-size: 10pt;
-         font-weight: bolder;
-         padding-left: 10px;
-         padding-right: 10px;  
-     }
-    h2{
-        color:rgb(39, 10, 10);
-        padding-top: 5px;
-        padding-left: 10px;
-        margin-bottom: 0pt;
-        padding-bottom: 0mm;
-    }
-    p{
-        color:rgb(39, 10, 10);
-        text-align: justify;
-        text-justify: inter-word;
-        font-size: 12pt;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        font-family: 'Courier New', Courier, monospace;
-        font-style: normal;
-        font-weight: bold;
-        }
-    .visit{
-        background-color: rgb(226, 148, 135);
-        margin-top: 90px;
-        padding-top: 0px;
-        margin-left: 80px;
-        margin-right: auto;
-        width: 300px;
+    .navbar__btn{
         display: flex;
-        flex-wrap: wrap;
-        /* align-content: center; */ 
-        border-radius: 15px 20px 30px;   
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        width: 100%;
     }
-    .eatwithus{
-        background-color: rgb(226, 148, 135);
-        margin-left: 80px;
-        margin-top: 10px;
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        height: 100%;
+        width: 2cm;
+        border:none;
+        outline: none;
+        border-radius: 4px;
+        background:#f77062;
+        color:white;
+    }
+    .button:hover{
+        background-color: #4837ff;
+        transition:all 0.3s ease;
+    }
+    .navbar__links:hover{
+        background-color: #f77062;
+        transition:all 0.3s ease;
+    }
+    @media screen and (max-width:960px){
+        .navbar__contaniner{
+            display:flex;
+            justify-content: space-between;
+            height: 80px;
+            width: 100%;
+            max-width: 1600px;
+            padding: 0;
+        }
+        .navbar__menu{
+            display: grid;
+            grid-template-columns: auto;
+            margin: 0;
+            width: 100%;
+            position:absolute;
+            top: -1000px;
+            opacity: 1;
+            transition:all 0.5s ease;
+            height: 50vh;
+            z-index: -1;
+        }
+        .navbar__menu.active{
+            background:black;
+            top:100%;
+            opacity: 1;
+            transition:all 0.5s ease;   
+            height: 50vh;
+            z-index: 99;    
+            font-size: 1.6rem; 
+        }
+        #navbar__logo{
+            padding-left: 25px;
+        }
+      .navbar_toggle .bar{
+          width: 25px;
+          height: 3px;
+          margin: 5px auto;
+          transition: all 0.3s ease-in-out;
+          background: white;
+      }
+      .navbar__item{
+          width: 100%;
+      }
+      .navbar__links{
+          text-align: center;
+          padding:2rem;
+          width: 100%;
+          display: table;
+      }
+      #mobile-menu{
+          position: absolute;
+          top: 20%;
+          right: 5%;
+          transform: translate(5%,20%);
+      }
+      .navbar__btn{
+          padding-bottom: 2rem;
+          /* justify-self: unset; */
+      }
+      .button{
+          display: flex;
+          justify-content: center;
+
+      }
+    }
+    .visit{
+        margin-top: 300px;
+        padding-top: 0px;
+        margin-left: 30px;
         margin-right: auto;
-        padding-top: 5px;
-        width: 300px;
+        width: 720px;
         display: flex;
         flex-wrap: wrap;
         align-content: center; 
-        border-radius: 15px 20px 30px;   
-    } 
-    .column {
-        width:20%;
-        padding: 5px;
-        /* background-color: whitesmoke; */
-    }
-    .row::after{
-        content: "";
-        clear:both;
-        display:table;
-    }
-    .row{
-        margin-left: 80px;
-        height: 250px;
-        display: flex;
     
     }
-    main{    
-        height: 600px;     
-        width: auto;     
-    }
-    h1{
-        color: white;
-        font-size:30px;
-        text-align: right;
-        padding-right: 30px;
-    }
-    h4{
-        color: white;
-        font-size: 12pt;
-    }
-    h3{
-        color: white;
-        font-size: 14pt;
-        
-    }
-   
-    footer p{
-        color: white;
-        font-size: 12pt;
-    }
-    .row p{
-        
+    .eatwithus{  
+        margin-top: 2cm;
+        padding-top: 0px;
+        margin-left: 30px;  
+        padding-top: 0px;
+        width: 720px;
+        display: flex;
         flex-wrap: wrap;
-        color: white;
-        text-decoration: tomato;
-        width: 700px;
-        margin-top:0cm;
-        margin-left: 300px;
-        margin-bottom: 10px;
-        padding-right: 2CM;
-        padding-top: 2CM;
-        border-radius: 15px 20px 30px;
-        /* float:right; */
+        align-content: center;
+        text-align: justify;   
+       
+    } 
+    .visit h2,p{
+        color:rgb(223, 189, 39);
+    }
+    .eatwithus h2, p{
+        color:rgb(223, 189, 39);
     }
     .column img{
         position: absolute;
         width: 120px;
-        height: 150px;
-        margin-right: auto;
-        padding-top: 1CM;
-        margin-left: 1450px;
+        height: 130px;
+        margin-left: 20px;
+        padding-left: 0cm;
+        margin-top: 0cm;
         border-radius: 30%;
         margin-bottom: 10px;
+        border:5px solid rgb(238, 87, 0);
     }
-
-
+    .column p{
+        
+        color:rgb(223, 189, 39);
+        height: 130px; 
+        width: 600px;
+        margin-top: .75cm;
+        margin-left: 150px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: justify;      
+       
+    }
     footer{
-        background-color: #291010;
+        background-color: #131313;
         height: 30px;
         width: 100%; 
         display: block;
@@ -169,6 +226,7 @@
         padding-left: 15px;
         padding-bottom: 20px;
     }
-        
-
+   
     
+    
+  
